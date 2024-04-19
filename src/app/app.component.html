@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <input
+        type="input"
+        class="form-control"
+        id="exampleInputEmail1"
+        placeholder="Search Key"
+      />
+    </div>
+    <div class="col-md-6">
+      <button class="btn btn-primary" (click)="OnfetchPosts()">Search</button>
+    </div>
+  </div>
+  <hr />
+  <ul>
+    <li *ngFor="let item of this.ProductList">
+      <p *ngFor="let prdct of item.products">
+        <!-- {{ prdct.brand }} -->
+      </p>
+    </li>
+  </ul>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
